@@ -1,0 +1,45 @@
+function multiply(num1, num2) {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    return "Please provide a number";
+  }
+  const mult = num1 * num2;
+  return mult;
+}
+
+const result = multiply("5", "seven");
+// console.log(result);
+
+function fullName(firstName, secondName) {
+  if (typeof firstName !== "string" || typeof secondName !== "string") {
+    return "Please provide string";
+  }
+  const full = firstName + " " + secondName;
+  return full;
+}
+
+const full = fullName("Shafrin");
+// console.log("Name: ", full);
+
+function getPrice(product) {
+  if(typeof product!=='object'){
+    return "Please provide an object";
+  };
+  const price = product.price;
+  return price;
+}
+
+// const price = getPrice({ name: "chulkanir dandi", price: 35, color: "blue" });
+const price = getPrice(5);
+// console.log(price);
+
+function getSecond(numbers){
+    if(Array.isArray(numbers) === false){
+        return 'Please provide an array';
+
+    }
+    const second = numbers[1];
+    return second;
+}
+
+const second = getSecond([1,25,65]);
+console.log(second);
